@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Куванова](https://up.htmlacademy.ru/adaptive/15/user/560773).
-* Наставник: `Неизвестно`.
+* Наставник: [Галина Борисова](https://up.htmlacademy.ru/adaptive/15/user/235021).
 
 ---
 
