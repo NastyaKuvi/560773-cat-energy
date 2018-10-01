@@ -1,0 +1,136 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <title>Cat Energy</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кэт энерджи">
+          <span class="main-nav__title">Cat Energy</span>
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h2 class="page-main__header">Подбор программы</h2>
+      <form class="page-main__form from-selection" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-selection__set">
+          <p class="form-selection__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <div class="form-selection__field">
+            <label for="cat-name">Имя:*</label>
+            <input class="text-input" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+          </div>
+          <div class="form-selection__field">
+            <label for="cat-weight">Вес(кг):*</label>
+            <input class="text-input"  type="text" name="cat-weight" id="cat-weight" placeholder="7">
+          </div>
+          <div class="form-selection__field">
+            <label for="cat-age">Возраст:</label>
+            <input class="text-input"  type="text" name="cat-age" id="cat-age" placeholder="7">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-selection__set">
+          <div class="form-selection__field">
+            <input class="radio-input" type="radio" name="needs" id="needs-loss" value="needs-loss" checked>
+            <label for="needs-loss">Похудение</label>
+          </div>
+          <div class="form-selection__field">
+            <input class="radio-input" type="radio" name="needs" id="needs-gain" value="needs-gain">
+            <label for="needs-gain">Набор массы</label>
+          </div>
+          <div class="form-selection__field">
+            <input class="radio-input" type="radio" name="needs" id="needs-question" value="needs-question">
+            <label for="needs-question">Не знаю (нужен ваш совет)</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-selection__set">
+          <h3 class="form-selection__header">Контактные данные<br>(владельца кота)</h3>
+          <div class="form-selection__field">
+            <label for="cat-owner">E-mail:*</label>
+            <input class="text-input text-input--email" type="email" name="cat-owner" id="cat-owner" placeholder="kuklachev@gmail.com">
+          </div>
+          <div class="form-selection__field">
+            <label for="phone">Телефон:*</label>
+            <input class="text-input text-input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-selection__set">
+          <h3 class="form-selection__header">Комментарий</h3>
+          <div class="form-selection__field">
+            <label class="visually-hidden" for="cat-special">Текст письма:</label>
+            <textarea class="text-area" name="cat-special" id="cat-special" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-selection__set">
+          <h3 class="form-selection__header">Дополнительно</h3>
+          <div class="form-selection__field">
+            <input class="check-input" type="checkbox" name="aux-items" id="aux-item1" value="aux-item1">
+            <label for="aux-item1">Сахарозаменитель</label>
+          </div>
+          <div class="form-selection__field">
+            <input class="check-input" type="checkbox" name="aux-items" id="aux-item2" value="aux-item2">
+            <label for="aux-item2">Питьевая вода</label>
+          </div>
+          <div class="form-selection__field">
+            <input class="check-input" type="checkbox" name="aux-items" id="aux-item3" value="aux-item3">
+            <label for="aux-item3">Молоко</label>
+          </div>
+          <div class="form-selection__field">
+            <input class="check-input" type="checkbox" name="aux-items" id="aux-item4" value="aux-item4">
+            <label for="aux-item4">Витамины</label>
+          </div>
+        </fieldset>
+
+        <button class="form-selection__button" type="submit">Отправить заявку</button>
+        <small class="form-selection__tip">
+            <sup>*</sup> — Обязательные поля
+          </small>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__information information">
+        <p class="information__dilers">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="information__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="page-footer__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+        <img src="http://placehold.it/150x100" width="150" height="100"
+          alt="Мы находимся в ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+      <h2 class="page-footer__title">Cat Energy</h2>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li><a class="social__item social__item--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social__item social__item--instagram" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social__item social__item--facebook" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
