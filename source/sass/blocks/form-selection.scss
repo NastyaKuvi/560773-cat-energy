@@ -1,0 +1,22 @@
+.form-selection__header{
+  @include third-header();
+}
+
+.form-selection__intro {
+  text-transform: uppercase;
+}
+
+.form-selection__field {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $gray;
+}
+
+.form-selection__tip {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $light-gray;
+}

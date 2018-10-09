@@ -1,0 +1,18 @@
+.aux-catalog__title {
+  @include third-header();
+
+  text-transform: uppercase;
+}
+
+.aux-catalog__banner {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.aux-catalog__body {
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $white;
+}
