@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кэт энерджи">
-          <span class="main-nav__title">Cat Energy</span>
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кэт энерджи">
+            <img class="main-nav__logo-header" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
+          </a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a>Главная</a>
@@ -35,7 +38,7 @@
         <h2 class="promo__header">Функциональное питание для котов</h2>
         <p class="promo__tagline">Занялся собой? Займись котом!</p>
         <img class="promo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Корм с курицей">
-        <a class="promo__action-btn" href="form.html">Подобрать программу</a>
+        <a class="promo__action-btn action-btn" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="programs">
@@ -102,16 +105,16 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__information information">
+      <div class="page-footer__information information information--main">
         <p class="information__dilers">Приглашаем к сотрудничеству дилеров!</p>
         <p class="information__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="page-footer__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
-        <img src="http://placehold.it/150x100" width="150" height="100"
+        <img src="../img/bg-map-mobile@1x.png" width="320" height="400"
           alt="Мы находимся в ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <h2 class="page-footer__title">Cat Energy</h2>
+      <img class="page-footer__logo-title" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li><a class="social__item social__item--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>

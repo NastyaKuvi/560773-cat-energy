@@ -1,0 +1,27 @@
+.example {
+  background-color: $dark-white;
+}
+.example__header {
+  @include second-header();
+}
+
+.example__body {
+  color: $light-gray;
+}
+
+.example__list-value {
+  @include third-header();
+
+  text-transform: uppercase;
+}
+
+.example__list-field {
+  font-size: 12px;
+  line-height: 12px;
+  color: $light-gray;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+}

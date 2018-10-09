@@ -1,0 +1,7 @@
+.how-to__header {
+  @include second-header();
+}
+
+.how-to__item-body {
+  color: $light-gray;
+}

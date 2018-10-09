@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+@import "blocks/action-btn.scss";
+@import "blocks/aux-catalog.scss";
+@import "blocks/aux-item.scss";
+@import "blocks/catalog.scss";
+@import "blocks/check-input.scss";
+@import "blocks/copyright.scss";
+@import "blocks/example.scss";
+@import "blocks/form-selection.scss";
+@import "blocks/how-to.scss";
+@import "blocks/information.scss";
+@import "blocks/item.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/more.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/programs.scss";
+@import "blocks/promo.scss";
+@import "blocks/radio-input.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/text-area.scss";
+@import "blocks/text-input.scss";
+
+@font-face {
+  font-family: 'Oswald-medium';
+  src: url('../fonts/oswaldmedium.woff2') format('woff2'),
+       url('../fonts/oswaldmedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Oswald-regular';
+  src: url('../fonts/oswaldregular.woff2') format('woff2'),
+       url('../fonts/oswaldregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Oswald-regular', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  font-weight: 400;
+  color: $dark-gray;
+
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

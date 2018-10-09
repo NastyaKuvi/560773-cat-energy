@@ -1,8 +1,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
     <title>Cat Energy</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -11,18 +11,18 @@
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
           <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кэт энерджи">
-          <span class="main-nav__title">Cat Energy</span>
+          <img class="main-nav__logo-header" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a>Главная</a>
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -102,7 +102,7 @@
           </div>
         </fieldset>
 
-        <button class="form-selection__button" type="submit">Отправить заявку</button>
+        <button class="form-selection__button action-btn" type="submit">Отправить заявку</button>
         <small class="form-selection__tip">
           <sup>*</sup> — Обязательные поля
         </small>
@@ -117,10 +117,10 @@
       </div>
       <div class="page-footer__map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
-        <img src="http://placehold.it/150x100" width="150" height="100"
+        <img src="../img/bg-map-mobile@1x.png" width="320" height="400"
           alt="Мы находимся в ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <h2 class="page-footer__title">Cat Energy</h2>
+      <img class="page-footer__logo-title" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li><a class="social__item social__item--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
