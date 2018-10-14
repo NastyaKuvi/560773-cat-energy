@@ -1,3 +1,12 @@
+.form-selection__set {
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-bottom: 50px;
+}
+
 .form-selection__header{
   @include third-header();
 }
@@ -19,4 +28,43 @@
   line-height: 16px;
 
   color: $light-gray;
+}
+.form-selection__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-selection__needs-wrapper {
+  border-top: 1px solid rgb(230, 230, 230);
+}
+
+.form-selection__aux-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form-selection__set {
+    border-bottom: none;
+  }
+
+  .form-selection__needs-wrapper {
+    border-top: none;
+  }
+
+  .form-selection__aux-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-selection__field--aux {
+    width: 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-selection__wrapper {
+    flex-direction: row;
+  }
 }
