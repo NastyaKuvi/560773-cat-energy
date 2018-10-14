@@ -1,3 +1,13 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .item__title {
   font-size: 16px;
   line-height: 20px;
@@ -10,4 +20,12 @@
   line-height: 16px;
 
   color: $light-gray;
+}
+
+
+@media (min-width: $tablet-width) {
+  .item__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }

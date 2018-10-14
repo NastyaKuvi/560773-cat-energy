@@ -1,5 +1,8 @@
-// Colors
+// Device widths
+$tablet-width: 768px;
+$desktop-width: 1260px;
 
+// Colors
 $green-color: rgb(104, 183, 56);
 
 $light-gray: rgb(68, 68, 68);
@@ -8,15 +11,3 @@ $dark-gray: rgb(17, 17, 17);
 
 $white: rgb(255, 255, 255);
 $dark-white: rgb(242, 242, 242);
-
-// Fonts
-
-@mixin second-header() {
-  font-size: 36px;
-  line-height: 60px;
-}
-
-@mixin third-header() {
-  font-size: 24px;
-  line-height: 24px;
-}

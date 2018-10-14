@@ -1,7 +1,29 @@
+.aux-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.aux-catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .aux-catalog__title {
   @include third-header();
 
   text-transform: uppercase;
+}
+
+.aux-catalog__list {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+}
+
+.aux-catalog__item {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin-bottom: 10px;
 }
 
 .aux-catalog__banner {
@@ -15,4 +37,12 @@
   line-height: 20px;
 
   color: $white;
+}
+
+
+@media (min-width: $desktop-width) {
+  .aux-catalog__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

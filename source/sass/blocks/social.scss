@@ -1,0 +1,12 @@
+.social__list {
+  @include list-reset();
+
+  display: flex;
+  flex-direction: row;
+
+  width: 100px;
+
+  // TODO remove temp
+  height: 30px;
+  background-color: blue;
+}

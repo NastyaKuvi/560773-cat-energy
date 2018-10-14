@@ -1,0 +1,34 @@
+// Fonts
+@font-face {
+  font-family: 'Oswald-medium';
+  src: url('../fonts/oswaldmedium.woff2') format('woff2'),
+       url('../fonts/oswaldmedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Oswald-regular';
+  src: url('../fonts/oswaldregular.woff2') format('woff2'),
+       url('../fonts/oswaldregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Mixins
+@mixin second-header() {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@mixin third-header() {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

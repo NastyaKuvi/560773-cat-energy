@@ -1,21 +1,45 @@
 .example {
+  padding: 0 20px;
   background-color: $dark-white;
+
+  display: flex;
+  flex-direction: column;
 }
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__header {
   @include second-header();
+  margin: 30px 0;
+  align-self: flex-start;
 }
 
 .example__body {
   color: $light-gray;
 }
 
-.example__list-value {
+.example__facts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+}
+
+.example__facts-table {
+  display: flex;
+  flex-direction: row;
+}
+
+.example__table-value {
   @include third-header();
 
   text-transform: uppercase;
 }
 
-.example__list-field {
+.example__table-field {
   font-size: 12px;
   line-height: 12px;
   color: $light-gray;
@@ -24,4 +48,31 @@
 .example__cost {
   font-size: 14px;
   line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example__facts-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-self: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__wrapper {
+    width: 570px;
+  }
+
+  .example__facts-wrapper {
+    flex-direction: column;
+  }
 }
