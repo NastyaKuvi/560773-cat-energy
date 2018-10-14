@@ -1,0 +1,16 @@
+@mixin second-header() {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@mixin third-header() {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
