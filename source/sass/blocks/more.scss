@@ -1,9 +1,35 @@
 .more {
+  position: relative;
+  padding-top: 78px;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(230, 230, 230);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
 }
 
 .more__title {
+  position: relative;
+  margin-bottom: 9px;
+
   font-size: 16px;
   line-height: 20px;
 
@@ -11,6 +37,10 @@
 }
 
 .more__body {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
 
@@ -22,5 +52,14 @@
   line-height: 20px;
 
   text-transform: uppercase;
+  color: $light-gray;
   background-color: $dark-white;
+
+  &:hover {
+    background-color: rgb(235, 235,235);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

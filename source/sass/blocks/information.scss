@@ -1,7 +1,8 @@
 .information {
+  padding: 11px 19px;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .information--main {
@@ -9,6 +10,8 @@
 }
 
 .information__dilers {
+  margin-right: 19px;
+
   font-size: 16px;
   line-height: 20px;
 
@@ -16,8 +19,9 @@
 }
 
 .information__adress {
+  margin-top: 18px;
+
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
-
-  text-transform: uppercase;
 }

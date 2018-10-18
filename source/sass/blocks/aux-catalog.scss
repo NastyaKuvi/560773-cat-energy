@@ -4,39 +4,84 @@
 }
 
 .aux-catalog__wrapper {
+  margin: 0 20px;
+
   display: flex;
   flex-direction: column;
+
 }
 
 .aux-catalog__title {
+  position: relative;
+  margin-top: 27px;
+  margin-bottom: 34px;
+  margin-left: 19px;
+  padding-right: 55px;
+
   @include third-header();
 
-  text-transform: uppercase;
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    right: 0;
+
+    width: 53px;
+    height: 3px;
+
+    background-color: $green;
+  }
 }
 
 .aux-catalog__list {
   @include list-reset();
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: column;
-}
 
-.aux-catalog__item {
-  border-bottom: 1px solid rgb(230, 230, 230);
-  margin-bottom: 10px;
+
+  border-top: 1px solid rgb(230, 230, 230);
 }
 
 .aux-catalog__banner {
+  margin-bottom: 36px;
+
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .aux-catalog__body {
+  position: relative;
+  padding-top: 187px;
+  padding-bottom: 43px;
+
+  display: block;
+
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
 
+  text-align: center;
   color: $white;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 

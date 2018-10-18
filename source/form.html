@@ -1,19 +1,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Кэт энерджи">
-          <img class="main-nav__logo-header" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <header class="page-header container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
@@ -28,11 +32,11 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <h2 class="page-main__header">Подбор программы</h2>
       <form class="page-main__form from-selection" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form-selection__set">
-          <p class="form-selection__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="form-selection__intro">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
           <div class="form-selection__wrapper">
             <div class="form-selection__profile-wrapper">
               <div class="form-selection__field">
@@ -118,10 +122,10 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__information information">
-        <p class="information__dilers">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="information__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="information__dilers">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        <p class="information__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
       <div class="page-footer__map map">
         <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/-/CBBbNHC0sB" width="320" height="360"></iframe>
@@ -129,7 +133,7 @@
           alt="Мы находимся в ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
       <div class="page-footer__links">
-        <img class="page-footer__logo-title" src="http://placehold.it/150x100" width="150" height="100" alt="Cat Energy">
+          <img class="page-footer__logo" src="../img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         <div class="page-footer__social social">
           <ul class="social__list">
             <li><a class="social__item social__item--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -142,5 +146,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

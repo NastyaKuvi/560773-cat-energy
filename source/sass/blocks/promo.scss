@@ -1,5 +1,8 @@
 .promo {
-  margin-bottom: 30px;
+  margin-bottom: 66px;
+
+  display: flex;
+  flex-direction: column;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -7,8 +10,7 @@
 
   color: $white;
 
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .promo__wrapper {
@@ -19,14 +21,19 @@
 }
 
 .promo__header {
+  margin-top: 27px;
+  margin-bottom: 25px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 
-  margin-top: 0;
+  text-align: center;
 }
 
 .promo__tagline {
+  margin-top: 0;
+
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -35,11 +42,16 @@
 }
 
 .promo__action-btn {
-  margin-top: 280px;
+  margin-top: 288px;
+  padding: 11px 0;
+
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .promo__image {
-  margin-top: -280px;
+  margin-top: -314px;
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {

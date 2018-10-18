@@ -8,7 +8,7 @@
 
 .programs__list-item {
   padding: 0 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: $dark-white;
 
   display: flex;
@@ -17,29 +17,119 @@
 }
 
 .programs__item-header {
-  padding: 20px 0;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 72px;
+
   font-size: 24px;
   line-height: 37px;
 
   text-transform: uppercase;
 }
 
+.programs__item-header--slim,
+.programs__item-header--pro {
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 2px;
+    top: 4px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $green;
+    border-radius: 50%;
+  }
+}
+
+.programs__item-header--slim {
+  &::after {
+    left: 9px;
+    top: 2px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+}
+
+.programs__item-header--pro {
+  &::after {
+    top: 15px;
+    left: -6px;
+
+    width: 68px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
 .programs__item-body {
-  margin-bottom: 0;
+  margin: 0 auto;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid $dark-dark-white;
+
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 10px;
 
   color: $light-gray;
 }
 
 .programs__item-link {
+  position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-size: 16px;
   line-height: 16px;
 
+  color: $dark-gray;
   text-transform: uppercase;
+}
+
+.programs__item-link span {
+  position: relative;
+  padding-right: 44px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 9px;
+    top: 7px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover::after {
+    right: 0;
+
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop-width) {

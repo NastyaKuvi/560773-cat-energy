@@ -1,9 +1,12 @@
 .how-to {
   margin: 0 20px;
+  margin-bottom: 20px;
 }
 
 .how-to__header {
   @include second-header();
+
+  margin-top: -3px;
 }
 
 .how-to__list {
@@ -14,12 +17,50 @@
 }
 
 .how-to__list-item {
-  margin: 10px 0;
-  padding-left: 80px;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .how-to__item-body {
+  position: relative;
+  padding: 0px;
+  padding-left: 80px;
+  margin: 0px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
   color: $light-gray;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.how-to__item-body--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &.how-to__item-body--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &.how-to__item-body--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &.how-to__item-body--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
