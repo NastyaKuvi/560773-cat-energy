@@ -1,0 +1,60 @@
+.check-input + label {
+  position: relative;
+  padding-left: 46px;
+  padding-bottom: 11px;
+
+  cursor: pointer;
+}
+
+.check-input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -7px;
+
+  width: 30px;
+  height: 30px;
+
+  border:  1px solid $border-color;
+  opacity: 0.5;
+}
+
+.check-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 1px;
+
+  width: 21px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check-input:active + label {
+  opacity: 0.3;
+}
+
+.check-input:hover + label::before {
+  opacity: 1;
+}
+
+.check-input:active + label::before {
+  opacity: 0.3;
+}
+
+// .check-input:disabled + label::before {
+//   background-color: $green;
+// }
+
+// .check-input:checked:disabled + label::before {
+//   width: 27px;
+//   background-color: $green;
+// }
+
+// .check-input:focus + label::before {
+//   outline: 1px dashed #ffffff;
+//   outline-offset: 2px;
+// }
