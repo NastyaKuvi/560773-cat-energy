@@ -1,9 +1,11 @@
 // Device widths
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
 // Colors
-$green-color: rgb(104, 183, 56);
+$green: rgb(104, 183, 56);
+$dark-green: rgb(94, 170, 47);
 
 $light-gray: rgb(68, 68, 68);
 $gray: rgb(34, 34, 34);
@@ -11,3 +13,6 @@ $dark-gray: rgb(17, 17, 17);
 
 $white: rgb(255, 255, 255);
 $dark-white: rgb(242, 242, 242);
+$dark-dark-white: rgb(217, 217, 217);
+
+$border-color: rgb(205, 205, 205);

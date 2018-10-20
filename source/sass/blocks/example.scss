@@ -1,5 +1,6 @@
 .example {
   padding: 0 20px;
+  padding-bottom: 36px;
   background-color: $dark-white;
 
   display: flex;
@@ -13,11 +14,17 @@
 
 .example__header {
   @include second-header();
-  margin: 30px 0;
+  margin: 17px 0;
   align-self: flex-start;
 }
 
 .example__body {
+  margin: 0;
+  margin-top: 7px;
+  padding: 0;
+  padding-right: 1px;
+
+  font-family: Arial, Helvetica, sans-serif;
   color: $light-gray;
 }
 
@@ -29,8 +36,27 @@
 }
 
 .example__facts-table {
-  display: flex;
-  flex-direction: row;
+  margin-top: 25px;
+  width: 100%;
+
+  height: 89px; // TODO remove
+
+  & tbody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: center;
+  }
+  & tr {
+    width: 125px;
+
+    border: 1px solid rgb(205, 205, 205);
+  }
+  & td {
+    display: block;
+    width: auto;
+  }
 }
 
 .example__table-value {
@@ -46,6 +72,7 @@
 }
 
 .example__cost {
+  align-self: center;
   font-size: 14px;
   line-height: 20px;
 

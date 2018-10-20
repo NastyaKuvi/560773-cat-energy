@@ -11,6 +11,19 @@
   align-items: center;
 }
 
+.page-footer__logo {
+  margin-top: 38px;
+  margin-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__links {
     flex-direction: row;

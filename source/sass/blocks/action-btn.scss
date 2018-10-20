@@ -1,9 +1,22 @@
 .action-btn {
+  width: 280px;
+  padding: 10px 0;
+
   font-size: 16px;
   line-height: 20px;
 
   text-transform: uppercase;
+  text-align: center;
 
   color: $white;
-  background-color: $green-color;
+  background-color: $green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
