@@ -7,8 +7,9 @@
 }
 
 .programs__list-item {
-  padding: 0 20px;
-  margin-bottom: 20px;
+  padding: 24px 20px;
+  padding-bottom: 21px;
+  margin-bottom: 21px;
   background-color: $dark-white;
 
   display: flex;
@@ -18,7 +19,9 @@
 
 .programs__item-header {
   position: relative;
-  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 5px 0;
   padding-left: 72px;
 
   font-size: 24px;
@@ -43,7 +46,7 @@
 
     position: absolute;
     left: 2px;
-    top: 4px;
+    top: 0px;
 
     width: 50px;
     height: 50px;
@@ -56,7 +59,7 @@
 .programs__item-header--slim {
   &::after {
     left: 9px;
-    top: 2px;
+    top: -4px;
 
     width: 50px;
     height: 50px;
@@ -67,8 +70,8 @@
 
 .programs__item-header--pro {
   &::after {
-    top: 15px;
-    left: -6px;
+    top: 11px;
+    left: -7px;
 
     width: 68px;
     height: 28px;
@@ -79,19 +82,18 @@
 
 .programs__item-body {
   margin: 0 auto;
-  padding-bottom: 20px;
-  border-bottom: 1px solid $dark-dark-white;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
 
   font-family: Arial, Helvetica, sans-serif;
   padding-right: 10px;
 
+  border-bottom: 1px solid $dark-dark-white;
   color: $light-gray;
 }
 
 .programs__item-link {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 22px;
 
   font-size: 16px;
   line-height: 16px;
@@ -129,6 +131,74 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    margin: 0 30px;
+  }
+
+  .programs__list-item {
+    padding: 80px 52px;
+    padding-bottom: 63px;
+  }
+
+  .programs__item-body {
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .programs__item-body {
+    padding-left: 0;
+    padding-right: 200px;
+  }
+
+  .programs__item-link {
+    padding-left: 0;
+    padding-right: 200px;
+  }
+
+  .programs__item-header {
+    padding-left: 0;
+    padding-right: 200px;
+  }
+
+  .programs__item-header--slim,
+  .programs__item-header--pro {
+    &::before {
+      left: auto;
+      right: 0px;
+      top: 0px;
+      // transform - translateY check
+
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .programs__item-header--slim {
+    &::after {
+      left: auto;
+      right: 9px;
+      top: -4px;
+
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .programs__item-header--pro {
+    &::after {
+      left: auto;
+      right: 0px;
+      top: 54px;
+
+      width: 268px;
+      height: 112px;
+    }
   }
 }
 
