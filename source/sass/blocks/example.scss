@@ -1,5 +1,5 @@
 .example {
-  padding: 0 20px;
+  padding: 17px 20px;
   padding-bottom: 36px;
   background-color: $dark-white;
 
@@ -14,13 +14,14 @@
 
 .example__header {
   @include second-header();
-  margin: 17px 0;
+  margin: 0;
+  margin-bottom: 26px;
   align-self: flex-start;
 }
 
 .example__body {
   margin: 0;
-  margin-top: 7px;
+  margin-bottom: 24px;
   padding: 0;
   padding-right: 1px;
 
@@ -31,28 +32,32 @@
 .example__facts-wrapper {
   display: flex;
   flex-direction: column;
-
-  align-self: center;
 }
 
 .example__facts-table {
-  margin-top: 25px;
-  width: 100%;
+  margin-bottom: 13px;
 
-  height: 89px; // TODO remove
+  width: 100%;
 
   & tbody {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     text-align: center;
   }
-  & tr {
-    width: 125px;
 
-    border: 1px solid rgb(205, 205, 205);
+  & tr {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+    width: 123px;
+
+    border: 1px solid $border-color;
   }
+
   & td {
     display: block;
     width: auto;
@@ -61,13 +66,23 @@
 
 .example__table-value {
   @include third-header();
+  padding: 15px 0;
 
   text-transform: uppercase;
 }
 
 .example__table-field {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 0 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 12px;
+  background-color: $dark-white;
   color: $light-gray;
 }
 
@@ -86,6 +101,22 @@
     justify-content: space-between;
 
     align-self: auto;
+  }
+
+  .example__facts-table {
+    & tr {
+      width: 160px;
+    }
+  }
+
+  .example__table-field {
+    padding: 0 5px;
+    bottom: -4px;
+    white-space: nowrap;
+
+    & br {
+      display: none;
+    }
   }
 }
 

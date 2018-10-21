@@ -1,8 +1,17 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
 .slider__wrapper {
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  align-self: center;
 }
+
 .slider__value {
   font-size: 16px;
   line-height: 20px;
@@ -32,12 +41,13 @@
 
 .slider__btn {
   position: relative;
+  margin: 0 17px;
   margin-top: 3px;
 
   width: 84px;
   height: 14px;
 
-  border: 1px solid rgb(205, 205, 205);
+  border: 1px solid $border-color;
   border-radius: 15px;
   cursor: pointer;
 
@@ -46,7 +56,7 @@
 
     position: absolute;
     top:3px;
-    left: 8px;
+    left: 5px;
 
     width: 35px;
     height: 6px;
