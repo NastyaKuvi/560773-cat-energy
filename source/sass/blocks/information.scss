@@ -1,16 +1,24 @@
 .information {
+  background-color: $dark-white;
+
+  &--main {
+    background-color: $white;
+  }
+}
+
+.information__wrapper {
   padding: 11px 19px;
+  padding-right: 24px;
+  margin: 0 auto;
+  width: 320px;
 
   display: flex;
   flex-direction: row;
-}
-
-.information--main {
-  background-color: $white;
+  justify-content: space-between;
 }
 
 .information__dilers {
-  margin-right: 19px;
+  margin-right: 16px;
 
   font-size: 16px;
   line-height: 20px;
@@ -24,4 +32,20 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .information__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information {
+    background-color: $white;
+  }
+
+  .information__wrapper {
+    width: 100%;
+  }
 }

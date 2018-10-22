@@ -1,5 +1,5 @@
 .example {
-  padding: 17px 20px;
+  padding-top: 17px;
   padding-bottom: 36px;
   background-color: $dark-white;
 
@@ -8,8 +8,13 @@
 }
 
 .example__wrapper {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
+}
+
+.example__slider {
+  padding: 0 20px;
 }
 
 .example__header {
