@@ -4,7 +4,7 @@
 }
 
 .aux-catalog__wrapper {
-  margin: 0 20px;
+  padding: 0 20px;
 
   display: flex;
   flex-direction: column;
@@ -12,11 +12,14 @@
 }
 
 .aux-catalog__title {
+
   position: relative;
-  margin-top: 27px;
-  margin-bottom: 34px;
-  margin-left: 19px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 34px;
+  padding-left: 19px;
   padding-right: 55px;
+  width: 320px;
 
   @include third-header();
 
@@ -24,7 +27,7 @@
     content: "";
 
     position: absolute;
-    top: 14px;
+    top: 41px;
     right: 0;
 
     width: 53px;
@@ -46,8 +49,9 @@
 }
 
 .aux-catalog__banner {
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 
+  background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;

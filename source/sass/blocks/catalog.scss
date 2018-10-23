@@ -2,6 +2,16 @@
   border-top: 1px solid rgb(230, 230, 230);
 }
 
+.catalog__header {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 28px;
+
+  @include second-header();
+  font-weight: 400;
+}
+
 .catalog__list {
   @include list-reset();
 
