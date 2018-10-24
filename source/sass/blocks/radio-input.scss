@@ -1,6 +1,6 @@
 .radio-input + label {
   position: relative;
-  padding-left: 46px;
+  padding-left: 48px;
   padding-bottom: 11px;
 
   cursor: pointer;
@@ -9,7 +9,7 @@
 .radio-input + label::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 2px;
   top: -7px;
 
   width: 30px;
@@ -23,8 +23,8 @@
 .radio-input:checked + label::after {
   content: "";
   position: absolute;
-  left: 9px;
-  top: 3px;
+  left: 11px;
+  top: 1px;
 
   width: 12px;
   height: 12px;

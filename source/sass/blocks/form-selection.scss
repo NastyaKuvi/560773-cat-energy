@@ -8,46 +8,50 @@
 .form-selection__set {
   position: relative;
   padding: 0;
-  margin: 0;
 
   display: flex;
   flex-direction: column;
 
   border: none;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 
-.form-selection__header{
+.form-selection__header {
   padding-left: 18px;
+  padding-right: 22px;
   margin-bottom: 33px;
 
   @include third-header();
+
+  background-color: $white;
 
   &::before {
     content: "";
 
     position: absolute;
-    right: 0;
-    top: 10px;
+    left: 0;
+    top: 13px;
 
-    width: 50px;
+    width: 100%;
     height: 2px;
 
     background-color: $green;
+    z-index: -1;
   }
 }
 
 .form-selection__intro {
-  padding: 0 18px;
+  padding: 0 21px;
   margin: 0;
-  margin-top: -3px;
   margin-bottom: 39px;
   text-transform: uppercase;
 }
 
 .form-selection__field {
+  position: relative;
   padding: 0 18px;
   margin-bottom: 14px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,9 +61,6 @@
   text-transform: uppercase;
 
   color: $gray;
-}
-.form-selection__field--last {
-  margin-bottom: 0;
 }
 
 .form-selection__wrapper {
@@ -72,6 +73,7 @@
 }
 
 .form-selection__needs-wrapper {
+  margin-bottom: 14px;
   padding-bottom: 2px;
   padding-top: 27px;
   border-top: 1px solid rgb(230, 230, 230);
@@ -118,6 +120,13 @@
 
   .form-selection__field--aux {
     width: 285px;
+  }
+
+  .form-selection__header {
+    &::before {
+      left: calc((100% - 100vw )/2);
+      width: 100vw;
+    }
   }
 }
 

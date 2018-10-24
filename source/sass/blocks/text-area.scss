@@ -4,7 +4,13 @@
 
   width: 282px;
   height: 150px;
+  flex-grow: 1;
 
   text-transform: uppercase;
-  color: $gray;
+  color: $light-gray;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $light-gray;
+  }
 }
