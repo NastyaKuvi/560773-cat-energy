@@ -85,12 +85,17 @@
       background-image: url("../img/advantage-clock@2x.png");
     }
   }
+
+  &--clock br{
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  // .how-to__header {
-  //   font-size: 60px;
-  // }
+  .how-to {
+    padding: 0 9px;
+    margin-bottom: 9px;
+  }
 
   .how-to__list {
     flex-direction: row;
@@ -98,9 +103,11 @@
   }
 
   .how-to__list-item {
-    width: 245px;
-    margin-right: 160px;
+    margin: 40px 0;
+    margin-right: 140px;
     padding-left: 0px;
+
+    width: 245px;
   }
 
   .how-to__list-item:nth-child(2n) {
@@ -109,7 +116,11 @@
 
   .how-to__item-body {
     padding-left: 0;
-    padding-top: 80px;
+    padding-top: 111px;
+    padding-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       top: 0;
@@ -118,6 +129,28 @@
 
       width: 80px;
       height: 80px;
+    }
+
+    &::after {
+       content: attr(data-number);
+
+       position: absolute;
+       top: -40px;
+       right: -2px;
+
+       font-family: 'Oswald-regular', Arial, sans-serif;
+       font-size: 281px;
+       line-height: 281px;
+       color: $dark-white;
+       z-index: -1;
+    }
+
+    &--leaf::after {
+      right: 14px;
+    }
+
+    &--clock br{
+      display: block;
     }
   }
 }

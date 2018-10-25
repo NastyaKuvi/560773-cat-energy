@@ -27,6 +27,8 @@
 }
 
 .information__adress {
+  display: flex;
+  flex-direction: column;
   margin-top: 18px;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +38,24 @@
 
 @media (min-width: $tablet-width) {
   .information__wrapper {
+    padding: 45px 71px;
     width: 768px;
+  }
+
+  .information__dilers {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .information__adress {
+    margin-top: 0px;
+    font-size: 16px;
+
+    text-align: right;
+
+    & span {
+      margin-top: 19px;
+    }
   }
 }
 

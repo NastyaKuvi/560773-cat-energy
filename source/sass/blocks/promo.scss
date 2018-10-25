@@ -48,8 +48,8 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
-    padding-left: 120px;
-    padding-bottom: 573px;
+    padding-left: 118px;
+    padding-bottom: 528px;
     margin-bottom: 0;
 
     align-items: flex-start;
@@ -59,8 +59,26 @@
     text-align: start;
   }
 
+  .promo__header {
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__tagline {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .promo__action-btn {
-    margin-top: 20px;
+    margin-top: 17px;
+    padding: 17px 0;
+
+    width: 245px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 
   .promo__image {
@@ -75,6 +93,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .promo__image {
     margin-top: 0;
     top: 0;

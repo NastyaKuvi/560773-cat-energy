@@ -1,11 +1,25 @@
 @mixin second-header() {
   font-size: 36px;
   line-height: 60px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 @mixin third-header() {
   font-size: 24px;
   line-height: 24px;
+}
+
+@mixin main-text() {
+  font-size: 14px;
+  line-height: 18px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @mixin list-reset() {

@@ -66,3 +66,55 @@
     border-radius: 15px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .slider__cat {
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  .slider__wrapper {
+    margin: 0;
+  }
+
+  .slider__value {
+    font-size: 20px;
+  }
+
+  .slider__btn {
+    margin: 8px 22px;
+    width: 430px;
+    height: 8px;
+
+    background-color: rgb(220, 220, 220);
+    border-color: rgb(220, 220, 220);
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top:-15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 34px;
+      height: 34px;
+
+      background-color: $white;
+      border: 1px solid rgb(220, 220, 220);
+      box-shadow: 0 2px 7px rgb(220, 220, 220);
+    }
+
+    &::after {
+      top: -2px;
+      width: 8px;
+      height: 8px;
+
+      background-color: $green;
+    }
+  }
+}

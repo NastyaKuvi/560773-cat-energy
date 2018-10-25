@@ -57,10 +57,49 @@
   background-color: $dark-white;
 
   &:hover {
-    background-color: rgb(235, 235,235);
+    background-color: rgb(235, 235, 235);
   }
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more {
+    margin-top: 135px;
+    padding-bottom: 42px;
+
+    justify-content: flex-end;
+    border: 1px solid rgb(230, 230, 230);
+
+    &::before {
+      top: 53px;
+
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/icon-plus.svg");
+    }
+  }
+
+  .more__title {
+    margin-bottom: 28px;
+    padding: 0 73px;
+
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .more__body {
+    margin-bottom: 90px;
+    padding: 0 73px;
+
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .more__show-all {
+    width: 249px;
   }
 }

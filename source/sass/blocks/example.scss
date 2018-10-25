@@ -100,6 +100,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding-top: 0;
+    padding-bottom: 71px;
+
+    border-top: 1px solid $border-color;
+    background-color: $white;
+    background: linear-gradient(to top, $dark-white, $dark-white 462px, $white 462px, $white 100%);
+  }
+
+  .example__wrapper {
+    margin-bottom: 21px;
+    padding: 0 30px
+  }
+
+  .example__header {
+    margin-top: 44px;
+    margin-bottom: 62px;
+  }
+
+  .example__body {
+    margin-bottom: 53px;
+    padding-right: 10px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .example__facts-wrapper {
     display: flex;
     flex-direction: row;
@@ -109,18 +136,52 @@
   }
 
   .example__facts-table {
+    width: 410px;
+
+    & tbody {
+      justify-content: flex-start;
+    }
+
     & tr {
+      margin-right: 43px;
       width: 160px;
     }
   }
 
+  .example__table-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   .example__table-field {
     padding: 0 5px;
-    bottom: -4px;
+    bottom: -8px;
+
+    font-size: 14px;
+    line-height: 14px;
     white-space: nowrap;
+
+    background-color: $white;
 
     & br {
       display: none;
+    }
+  }
+
+  .example__cost {
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    text-transform: uppercase;
+    text-align: right;
+
+    & span {
+      margin-bottom: 10px;
     }
   }
 }

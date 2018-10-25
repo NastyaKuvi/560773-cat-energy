@@ -1,3 +1,7 @@
+.copyright {
+  width: 320px;
+}
+
 .copyright__link {
   margin: 19px;
 
@@ -24,6 +28,7 @@
 }
 
 .copyright__link-icon {
+  margin-right: -5px;
   width: 40px;
   height: 40px;
 
@@ -38,5 +43,14 @@
   &:active{
     opacity: 0.3;
     fill: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
+  .copyright__link {
+    margin: 19px 0;
   }
 }

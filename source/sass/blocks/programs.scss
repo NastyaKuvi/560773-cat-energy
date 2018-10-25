@@ -135,17 +135,40 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 20px;
+  }
+
   .programs__list {
     margin: 0 30px;
   }
 
   .programs__list-item {
-    padding: 80px 52px;
-    padding-bottom: 63px;
+    padding: 72px 52px;
+    padding-bottom: 31px;
+    margin-bottom: 29px;
+  }
+
+  .programs__item-header {
+    margin-bottom: 19px;
+
+    font-size: 36px;
   }
 
   .programs__item-body {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+
     border-bottom: none;
+  }
+
+  .programs__item-link span {
+    padding-right: 48px;
+    &::after {
+      right: 0;
+      top: 10px;
+    }
   }
 
 }
@@ -153,26 +176,33 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .programs__item-body {
     padding-left: 0;
-    padding-right: 200px;
+    padding-right: 230px;
+
+    &--pro {
+      padding-right: 260px;
+    }
   }
 
   .programs__item-link {
     padding-left: 0;
-    padding-right: 200px;
+    padding-right: 230px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .programs__item-header {
     padding-left: 0;
-    padding-right: 200px;
+    padding-right: 230px;
   }
 
   .programs__item-header--slim,
   .programs__item-header--pro {
     &::before {
       left: auto;
-      right: 0px;
-      top: 0px;
-      // transform - translateY check
+      right: 10px;
+      top: 19px;
 
       width: 200px;
       height: 200px;
@@ -182,8 +212,8 @@
   .programs__item-header--slim {
     &::after {
       left: auto;
-      right: 9px;
-      top: -4px;
+      right: 40px;
+      top: 7px;
 
       width: 140px;
       height: 194px;
@@ -193,8 +223,8 @@
   .programs__item-header--pro {
     &::after {
       left: auto;
-      right: 0px;
-      top: 54px;
+      right: -24px;
+      top: 63px;
 
       width: 268px;
       height: 112px;

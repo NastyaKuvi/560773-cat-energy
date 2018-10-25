@@ -25,7 +25,12 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    padding: 0 30px;
     border: none;
+  }
+
+  .catalog__header {
+    padding: 28px 0;
   }
 
   .catalog__list {
@@ -34,7 +39,12 @@
   }
 
   .catalog__item {
+    margin-right: 60px;
     width: 324px;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
   }
 }
 
