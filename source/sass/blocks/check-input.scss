@@ -45,16 +45,22 @@
   opacity: 0.3;
 }
 
-// .check-input:disabled + label::before {
-//   background-color: $green;
-// }
+@media (min-width: $tablet-width) {
+  .check-input + label {
+    padding-left: 60px;
+    padding-bottom: 28px;
+  }
 
-// .check-input:checked:disabled + label::before {
-//   width: 27px;
-//   background-color: $green;
-// }
+  .check-input + label::before {
+    left: 2px;
+    top: -9px;
 
-// .check-input:focus + label::before {
-//   outline: 1px dashed #ffffff;
-//   outline-offset: 2px;
-// }
+    width: 40px;
+    height: 40px;
+  }
+
+  .check-input:checked + label::after {
+    left: 11px;
+    top: 2px;
+  }
+}

@@ -93,10 +93,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    padding-left: 110px;
+    padding-bottom: 266px;
+  }
+
+  .promo__header {
+    margin-top: 80px;
+  }
+
+  .promo__tagline {
+    margin-bottom: 35px;
+  }
 
   .promo__image {
     margin-top: 0;
     top: 0;
+    right: 247px;
     z-index: 0;
   }
 

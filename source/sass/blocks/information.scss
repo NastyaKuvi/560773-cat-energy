@@ -1,3 +1,4 @@
+
 .information {
   background-color: $dark-white;
 
@@ -65,6 +66,17 @@
   }
 
   .information__wrapper {
+    padding: 45px 74px;
+
+    justify-content: flex-start;
     width: 100%;
+  }
+
+  .information__dilers {
+    margin-right: 97px;
+  }
+
+  .information__adress {
+    text-align: left;
   }
 }

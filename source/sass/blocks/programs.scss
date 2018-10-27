@@ -30,8 +30,7 @@
   text-transform: uppercase;
 }
 
-.programs__item-header--slim,
-.programs__item-header--pro {
+.programs__item-header {
   &::after {
     content: "";
 
@@ -233,13 +232,59 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
   .programs__list {
-    margin: 0;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .programs__list-item {
+    padding-right: 46px;
+    padding-bottom: 63px;
     width: 570px;
+  }
+
+  .programs__item-header {
+    padding-left: 162px;
+    margin-bottom: 67px;
+
+    &::before {
+      left: 1px;
+      top: -24px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .programs__item-header--slim {
+    &::after {
+      left: 15px;
+      top: -30px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .programs__item-header--pro {
+    &::after {
+      left: -17px;
+      top: -2px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .programs__item-body {
+    padding-bottom: 0;
+  }
+
+  .programs__item-link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

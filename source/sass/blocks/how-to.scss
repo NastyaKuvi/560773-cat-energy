@@ -54,7 +54,7 @@
     background-image: url("../img/advantage-leaf@1x.png");
 
     @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
+            (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
     }
   }
@@ -63,7 +63,7 @@
     background-image: url("../img/advantage-powder@1x.png");
 
     @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
+            (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
     }
   }
@@ -72,7 +72,7 @@
     background-image: url("../img/advantage-dining@1x.png");
 
     @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
+            (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
     }
   }
@@ -81,7 +81,7 @@
     background-image: url("../img/advantage-clock@1x.png");
 
     @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
+            (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
     }
   }
@@ -132,17 +132,17 @@
     }
 
     &::after {
-       content: attr(data-number);
+      content: attr(data-number);
 
-       position: absolute;
-       top: -40px;
-       right: -2px;
+      position: absolute;
+      top: -40px;
+      right: -2px;
 
-       font-family: 'Oswald-regular', Arial, sans-serif;
-       font-size: 281px;
-       line-height: 281px;
-       color: $dark-white;
-       z-index: -1;
+      font-family: "Oswald-regular", Arial, sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: $dark-white;
+      z-index: -1;
     }
 
     &--leaf::after {
@@ -157,7 +157,16 @@
 
 @media (min-width: $desktop-width) {
   .how-to {
-    margin: 0;
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+
+  .how-to__header {
+    padding: 0;
+  }
+
+  .how-to__list {
+    padding: 0;
   }
 
   .how-to__list-item {

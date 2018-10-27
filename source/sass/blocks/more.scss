@@ -103,3 +103,21 @@
     width: 249px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more {
+    padding-bottom: 40px;
+  }
+
+  .more__title {
+    padding: 0 37px;
+  }
+  .more__body {
+    margin-bottom: 87px;
+    padding: 0 37px;
+  }
+
+  .more__show-all {
+    width: 170px;
+  }
+}

@@ -51,9 +51,15 @@
   .page-footer__information {
     width:570px;
     position: absolute;
-    top: 50px;
-    left: 20px;
+    top: 93px;
+    right: 50%;
+    transform: translateX(-40px);
 
     z-index: 3;
+  }
+
+  .page-footer__links {
+    padding: 0 30px;
+    padding-bottom: 32px;
   }
 }

@@ -54,3 +54,10 @@
     margin: 19px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__link-icon {
+    margin-right: -7px;
+    margin-top: 7px;
+  }
+}

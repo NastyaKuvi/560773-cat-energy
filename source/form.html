@@ -76,7 +76,9 @@
         </fieldset>
 
         <fieldset class="form-selection__set">
-          <legend class="form-selection__header">Контактные данные<br>(владельца кота)</legend>
+          <legend class="form-selection__header">
+            <span>Контактные&#160;данные (владельца&#160;кота)</span>
+          </legend>
           <div class="form-selection__wrapper">
             <div class="form-selection__field">
               <label for="cat-owner">E-mail:*</label>
@@ -92,15 +94,19 @@
         </fieldset>
 
         <fieldset class="form-selection__set">
-          <legend class="form-selection__header">Комментарий</legend>
+          <legend class="form-selection__header">
+              <span>Комментарий</span>
+          </legend>
           <div class="form-selection__field">
             <label class="visually-hidden" for="cat-special">Текст письма:</label>
             <textarea class="text-area" name="cat-special" id="cat-special" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
-        <fieldset class="form-selection__set">
-          <legend class="form-selection__header">Дополнительно</legend>
+        <fieldset class="form-selection__set ">
+          <legend class="form-selection__header">
+            <span>Дополнительно</span>
+          </legend>
           <div class="form-selection__aux-wrapper">
             <div class="form-selection__field form-selection__field--aux">
               <input class="check-input visually-hidden" type="checkbox" name="aux-items" id="aux-item1" value="aux-item1" checked>
@@ -121,10 +127,12 @@
           </div>
         </fieldset>
 
-        <button class="form-selection__button action-btn" type="submit">Отправить заявку</button>
-        <small class="form-selection__tip">
-          <sup>*</sup> — Обязательные поля
-        </small>
+        <div class="form-selection__button-wrapper">
+          <button class="form-selection__button action-btn" type="submit">Отправить заявку</button>
+          <small class="form-selection__tip">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
       </form>
 
     </main>
@@ -133,7 +141,10 @@
       <div class="page-footer__information information">
         <div class="information__wrapper">
           <p class="information__dilers">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="information__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="information__adress">
+            <span>ул. Большая<br> Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
       </div>
       <div class="page-footer__map map">

@@ -59,3 +59,48 @@
   width: 20px;
   height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .text-input {
+    margin-left: 19px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .text-input--email {
+    padding-left: 22px;
+    margin-right: -3px;
+  }
+
+  .text-input--phone {
+    margin-left: 16px;
+    margin-right: -3px;
+  }
+
+  .text-input__icon--mail {
+    right: 35px;
+    top: 19px;
+  }
+
+  .text-input__icon--phone {
+    right: 32px;
+    top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .text-input--email {
+    margin-right: 0;
+  }
+
+  .text-input__icon--mail {
+    right: 22px;
+    top: 20px;
+  }
+
+  .text-input__icon--phone {
+    right: 16px;
+    top: 16px;
+  }
+}
