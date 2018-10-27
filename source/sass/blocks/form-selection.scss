@@ -109,7 +109,7 @@
 .form-selection__tip {
   align-self: center;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
 
@@ -177,7 +177,7 @@
     margin-right: 59px;
 
     &:nth-child(2n) {
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 
@@ -201,10 +201,10 @@
   }
 
   .form-selection__button {
-    margin-right:61px;
+    margin-right: 61px;
     margin-left: 43px;
     margin-bottom: 0;
-    padding: 16px 0px;
+    padding: 16px 0;
 
     width: 283px;
 
@@ -248,7 +248,7 @@
       margin-right: 85px;
 
       &:last-child {
-        margin-right: 0px;
+        margin-right: 0;
       }
     }
   }
