@@ -1,31 +1,63 @@
 .copyright {
-  align-self: flex-start;
-  width: 100%;
+  width: 320px;
 }
 
 .copyright__link {
-  display: block;
-  position: relative;
+  margin: 19px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $light-gray;
-  margin: 18px;
-  align-self: flex-start;
-  margin-top: 29px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: -4px;
-    top: -11px;
+  &:hover {
+    .copyright__link-icon {
+      opacity: 0.8;
+      fill: $green;
+    }
+  }
 
-    width: 40px;
-    height: 40px;
+  &:active{
+    opacity: 0.3;
+  }
+}
 
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.copyright__link-icon {
+  margin-right: -5px;
+  width: 40px;
+  height: 40px;
+
+  opacity: 0.6;
+  fill: $gray;
+
+  &:hover {
+    opacity: 1;
+    fill: $green;
+  }
+
+  &:active{
+    opacity: 0.3;
+    fill: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
+  .copyright__link {
+    margin: 19px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link-icon {
+    margin-right: -7px;
+    margin-top: 7px;
   }
 }

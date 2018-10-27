@@ -4,11 +4,24 @@
 }
 
 .page-main__header {
-  margin: 0;
   padding-top: 15px;
   padding-left: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 
   @include second-header();
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    padding-left: 29px;
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    padding-left: 30px;
+    padding-top: 45px;
+  }
 }

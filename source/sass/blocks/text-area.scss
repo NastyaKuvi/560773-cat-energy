@@ -4,7 +4,29 @@
 
   width: 282px;
   height: 150px;
+  flex-grow: 1;
 
   text-transform: uppercase;
-  color: $gray;
+  color: $light-gray;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $light-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-area {
+    margin: 0 50px;
+    margin-bottom: 31px;
+    padding: 13px 19px;
+    height: 172px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-area {
+    margin: 0px 27px;
+    margin-bottom: 29px;
+  }
 }

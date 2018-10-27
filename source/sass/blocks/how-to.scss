@@ -1,16 +1,18 @@
 .how-to {
-  margin: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .how-to__header {
   @include second-header();
 
   margin-top: -3px;
+  margin-bottom: 32px;
+  padding: 0 20px;
 }
 
 .how-to__list {
   @include list-reset();
+  padding: 0 20px;
 
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
 
 .how-to__list-item {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 
 .how-to__item-body {
@@ -35,8 +37,9 @@
     content: "";
 
     position: absolute;
-    top:0px;
+    top: 50%;
     left: 0px;
+    transform: translateY(-50%);
 
     width: 60px;
     height: 60px;
@@ -44,29 +47,55 @@
     background-color: $green;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50px auto;
   }
 
   &.how-to__item-body--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &.how-to__item-body--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &.how-to__item-body--dining::before {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &.how-to__item-body--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+            (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+
+  &--clock br{
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  // .how-to__header {
-  //   font-size: 60px;
-  // }
+  .how-to {
+    padding: 0 9px;
+    margin-bottom: 9px;
+  }
 
   .how-to__list {
     flex-direction: row;
@@ -74,19 +103,70 @@
   }
 
   .how-to__list-item {
-    width: 245px;
-    margin-right: 160px;
+    margin: 40px 0;
+    margin-right: 140px;
     padding-left: 0px;
+
+    width: 245px;
   }
 
   .how-to__list-item:nth-child(2n) {
     margin-right: 0px;
   }
+
+  .how-to__item-body {
+    padding-left: 0;
+    padding-top: 111px;
+    padding-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: 0;
+      left: 0px;
+      transform: none;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: attr(data-number);
+
+      position: absolute;
+      top: -40px;
+      right: -2px;
+
+      font-family: "Oswald-regular", Arial, sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: $dark-white;
+      z-index: -1;
+    }
+
+    &--leaf::after {
+      right: 14px;
+    }
+
+    &--clock br{
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .how-to {
-    margin: 0;
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+
+  .how-to__header {
+    padding: 0;
+  }
+
+  .how-to__list {
+    padding: 0;
   }
 
   .how-to__list-item {

@@ -1,18 +1,35 @@
 .map {
   position: relative;
+  min-width: 320px;
+  height: 365px;
 }
 
 .map__iframe {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
 
-  border: 0;
+  border: none;
+  z-index: 2;
 }
 
 .map__img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  z-index: 0;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 400px;
+  }
 }

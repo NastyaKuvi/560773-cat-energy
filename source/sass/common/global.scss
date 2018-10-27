@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -12,10 +14,10 @@ body {
   padding: 0;
   min-width: 320px;
 
-  font-family: 'Oswald-regular', Arial, sans-serif;
+  font-family: "Oswald-regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   font-weight: 400;
   color: $dark-gray;
 
@@ -27,8 +29,8 @@ a {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -46,10 +48,30 @@ input[type='radio'].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .body--main {
+    position: relative;
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right 0;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 50%;
+      height: 696px;
+      background-color: $green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right 0;
+      background-size: cover;
+
+      z-index: -1;
+
+    }
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+    background-size: 720px auto;
+  }
 }

@@ -5,30 +5,102 @@
 
   flex-grow: 1;
 
-  border:  1px solid $border-color;
-  opacity: 0.5;
+  border: 1px solid rgba($border-color, 0.5);
+  color: $light-gray;
 
   &::placeholder {
     text-transform: uppercase;
-    color: $gray;
+    color: $light-gray;
   }
 
   &:hover {
-    opacity: 1;
+    border: 1px solid $border-color;
   }
 
-  &:active {
+  &:focus {
     border: 1px solid $gray;
+
+    & + .text-input__icon {
+      opacity: 0.8;
+      fill: $green;
+    }
   }
 
   &:invalid {
-    border: rgb(255, 130, 130);
+    border: 1px solid rgb(255, 130, 130);
+
+    & + .text-input__icon {
+      opacity: 0.8;
+      fill: rgb(255, 130, 130);
+    }
   }
 }
 
-// .text-input--email {
-//   padding-right: 30px;
-//   background-image: url("../img/icon-mail.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
+
+.text-input--email,
+.text-input--phone {
+  padding-right: 40px;
+}
+
+.text-input__icon--mail {
+  position: absolute;
+  right: 34px;
+  top: 16px;
+
+  width: 17px;
+  height: 13px;
+}
+
+.text-input__icon--phone {
+  position: absolute;
+  right: 31px;
+  top: 13px;
+
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .text-input {
+    margin-left: 19px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .text-input--email {
+    padding-left: 22px;
+    margin-right: -3px;
+  }
+
+  .text-input--phone {
+    margin-left: 16px;
+    margin-right: -3px;
+  }
+
+  .text-input__icon--mail {
+    right: 35px;
+    top: 19px;
+  }
+
+  .text-input__icon--phone {
+    right: 32px;
+    top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .text-input--email {
+    margin-right: 0;
+  }
+
+  .text-input__icon--mail {
+    right: 22px;
+    top: 20px;
+  }
+
+  .text-input__icon--phone {
+    right: 16px;
+    top: 16px;
+  }
+}
