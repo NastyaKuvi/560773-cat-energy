@@ -14,6 +14,20 @@
 
   border: none;
   margin-bottom: 14px;
+
+  &:not(:first-child)::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 13px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $green;
+    z-index: -1;
+  }
 }
 
 .form-selection__header {
@@ -29,20 +43,6 @@
     width: min-content;
 
     background-color: $white;
-  }
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 13px;
-
-    width: 100%;
-    height: 2px;
-
-    background-color: $green;
-    z-index: -1;
   }
 }
 
@@ -97,6 +97,7 @@
 .form-selection__button-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   align-self: center;
 }
 
@@ -123,11 +124,16 @@
 
   .form-selection__set {
     border-bottom: none;
+
+    &:not(:first-child)::before {
+      top: 23px;
+      height: 3px;
+    }
   }
 
   .form-selection__intro {
     margin-bottom: 67px;
-    padding: 0 41px;
+    padding: 0 70px;
 
     font-size: 20px;
     line-height: 30px;
@@ -135,7 +141,7 @@
 
   .form-selection__wrapper {
     margin-bottom: 29px;
-    padding: 0 21px;
+    padding: 0 51px;
   }
 
   .form-selection__field {
@@ -158,7 +164,7 @@
   }
 
   .form-selection__aux-wrapper {
-    padding: 0 20px;
+    padding: 0 50px;
     margin-top: -11px;
 
     display: flex;
@@ -177,6 +183,7 @@
 
   .form-selection__header {
     margin-bottom: 77px;
+    padding: 0 30px;
 
     & span {
       padding-left: 39px;
@@ -184,18 +191,10 @@
       display: inline;
       background-color: $white;
     }
-
-    &::before {
-      top: 23px;
-
-      height: 3px;
-
-      left: calc((100% - 100vw )/2);
-      width: 100vw;
-    }
   }
 
   .form-selection__button-wrapper {
+    padding: 0 28px;
     margin-bottom: 40px;
     flex-direction: row;
     align-self: flex-start;
@@ -245,8 +244,8 @@
 
     &--aux:nth-child(n) {
       min-width: auto;
-      width: 270px;
-      margin-right: 55px;
+      width: 240px;
+      margin-right: 85px;
 
       &:last-child {
         margin-right: 0px;
@@ -268,13 +267,16 @@
   }
 
   .form-selection__header {
+    padding: 0;
+
     & span {
-      padding-left: 28px;
+      margin-left: -10px;
+      padding-left: 38px;
     }
   }
 
   .form-selection__aux-wrapper {
-    padding: 0 25px;
+    padding: 0 28px;
   }
 
   .form-selection__button {
@@ -284,6 +286,7 @@
   }
 
   .form-selection__button-wrapper {
+    padding: 0;
     margin-bottom: 21px;
   }
 }
