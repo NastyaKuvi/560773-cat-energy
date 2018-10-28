@@ -1,10 +1,8 @@
-@import "normalize";
-
+@import "common/normalize.scss";
 @import "common/fonts.scss";
 @import "common/variables.scss";
 @import "common/mixins.scss";
 @import "common/global.scss";
-
 @import "blocks/container.scss";
 @import "blocks/action-btn.scss";
 @import "blocks/aux-catalog.scss";

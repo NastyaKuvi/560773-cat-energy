@@ -14,7 +14,6 @@
 
   display: flex;
   flex-direction: column;
-
 }
 
 .programs__item-header {
@@ -28,9 +27,7 @@
   line-height: 37px;
 
   text-transform: uppercase;
-}
 
-.programs__item-header {
   &::after {
     content: "";
 
@@ -45,7 +42,7 @@
 
     position: absolute;
     left: 2px;
-    top: 0px;
+    top: 0;
 
     width: 50px;
     height: 50px;
@@ -84,7 +81,7 @@
   margin-bottom: 19px;
   padding-bottom: 23px;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   padding-right: 10px;
 
   border-bottom: 1px solid $dark-dark-white;
@@ -164,12 +161,12 @@
 
   .programs__item-link span {
     padding-right: 48px;
+
     &::after {
       right: 0;
       top: 10px;
     }
   }
-
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -233,7 +230,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   .programs__list {

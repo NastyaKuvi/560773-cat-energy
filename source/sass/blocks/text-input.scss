@@ -19,21 +19,21 @@
 
   &:focus {
     border: 1px solid $gray;
-
-    & + .text-input__icon {
-      opacity: 0.8;
-      fill: $green;
-    }
   }
 
   &:invalid {
     border: 1px solid rgb(255, 130, 130);
-
-    & + .text-input__icon {
-      opacity: 0.8;
-      fill: rgb(255, 130, 130);
-    }
   }
+}
+
+.text-input:focus + .text-input__icon {
+  opacity: 0.8;
+  fill: $green;
+}
+
+.text-input:invalid + .text-input__icon {
+  opacity: 0.8;
+  fill: rgb(255, 130, 130);
 }
 
 
@@ -89,7 +89,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .text-input--email {
     margin-right: 0;
   }
