@@ -17,7 +17,7 @@
   line-height: 20px;
 
   text-transform: uppercase;
-
+  cursor: pointer;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
 
   &:hover {
@@ -115,6 +115,14 @@
       height: 8px;
 
       background-color: $green;
+    }
+
+    &:hover::before {
+      box-shadow: 0 2px 7px rgb(200, 200, 200);
+    }
+
+    &:active::before {
+      border: 1px solid $green;
     }
   }
 }
