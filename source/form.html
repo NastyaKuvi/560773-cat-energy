@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -28,13 +30,13 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Подбор программы</a>
+            <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -87,15 +89,15 @@
           <div class="form-selection__wrapper container">
             <div class="form-selection__field">
               <label for="cat-owner">E-mail:*</label>
-              <input class="text-input text-input--email" type="email" name="cat-owner" id="cat-owner" placeholder="kuklachev@gmail.com" required>
-              <svg class="text-input__icon text-input__icon--mail" width="17" height="13">
+              <input class="form-selection__input text-input text-input--email" type="email" name="cat-owner" id="cat-owner" placeholder="kuklachev@gmail.com" required>
+              <svg class="form-selection__icon form-selection__icon--mail" width="17" height="13">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
             <div class="form-selection__field">
               <label for="phone">Телефон:*</label>
-              <input class="text-input text-input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
-              <svg class="text-input__icon text-input__icon--phone" width="20" height="20">
+              <input class="form-selection__input text-input text-input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="form-selection__icon form-selection__icon--phone" width="20" height="20">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </div>

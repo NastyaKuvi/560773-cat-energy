@@ -85,10 +85,6 @@
       background-image: url("../img/advantage-clock@2x.png");
     }
   }
-
-  &--clock br {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -147,10 +143,6 @@
 
     &--leaf::after {
       right: 14px;
-    }
-
-    &--clock br {
-      display: block;
     }
   }
 }

@@ -26,9 +26,13 @@
 .item__title {
   padding-right: 45px;
   margin: 0;
+  margin-bottom: 13px;
+
+  display: block;
 
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
 
   text-transform: uppercase;
   color: $dark-gray;
@@ -43,6 +47,7 @@
   line-height: 16px;
 
   color: $light-gray;
+  border-collapse: collapse;
 }
 
 .item__value,
@@ -61,7 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .item {
-    padding-bottom: 42px;
+    padding-bottom: 40px;
     justify-content: flex-end;
 
     min-height: 568px;
@@ -90,13 +95,13 @@
     font-size: 16px;
 
     & td {
-      padding: 7px 0;
+      padding: 8px 0;
       border-bottom: 1px solid $border-color;
     }
   }
 
   .item__title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     padding: 0;
 
     display: flex;

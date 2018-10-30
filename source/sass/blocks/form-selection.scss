@@ -14,15 +14,23 @@
 
   border: none;
   margin-bottom: 14px;
+}
 
-  &:not(:first-child)::before {
+.form-selection__header {
+  position: relative;
+  margin-bottom: 33px;
+
+  @include third-header();
+
+  &::before {
     content: "";
 
     position: absolute;
     left: 0;
     top: 13px;
 
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     height: 2px;
 
     background-color: $green;
@@ -30,20 +38,14 @@
   }
 }
 
-.form-selection__header {
-  margin-bottom: 33px;
+.form-selection__header span {
+  padding-left: 18px;
+  padding-right: 22px;
+  display: inline-block;
 
-  @include third-header();
+  width: min-content;
 
-  & span {
-    padding-left: 18px;
-    padding-right: 22px;
-    display: inline-block;
-
-    width: min-content;
-
-    background-color: $white;
-  }
+  background-color: $white;
 }
 
 .form-selection__intro {
@@ -116,6 +118,34 @@
   color: $light-gray;
 }
 
+.form-selection__input:focus + .form-selection__icon {
+  opacity: 0.8;
+  fill: $green;
+}
+
+.form-selection__input:invalid + .form-selection__icon {
+  opacity: 0.8;
+  fill: rgb(255, 130, 130);
+}
+
+.form-selection__icon--mail {
+  position: absolute;
+  right: 34px;
+  top: 16px;
+
+  width: 17px;
+  height: 13px;
+}
+
+.form-selection__icon--phone {
+  position: absolute;
+  right: 31px;
+  top: 13px;
+
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .form-selection {
     padding: 30px 0;
@@ -126,11 +156,6 @@
     margin: 0;
     margin-bottom: 14px;
     border-bottom: none;
-
-    &:not(:first-child)::before {
-      top: 23px;
-      height: 3px;
-    }
   }
 
   .form-selection__intro {
@@ -187,12 +212,17 @@
     margin-bottom: 77px;
     padding: 0 30px;
 
-    & span {
-      padding-left: 39px;
-      padding-right: 44px;
-      display: inline;
-      background-color: $white;
+    &::before {
+      top: 23px;
+      height: 3px;
     }
+  }
+
+  .form-selection__header span {
+    padding-left: 39px;
+    padding-right: 44px;
+    display: inline;
+    background-color: $white;
   }
 
   .form-selection__button-wrapper {
@@ -217,6 +247,16 @@
   .form-selection__tip {
     margin-top: -3px;
     font-size: 16px;
+  }
+
+  .form-selection__icon--mail {
+    right: 35px;
+    top: 19px;
+  }
+
+  .form-selection__icon--phone {
+    right: 32px;
+    top: 15px;
   }
 }
 
@@ -270,11 +310,11 @@
 
   .form-selection__header {
     padding: 0;
+  }
 
-    & span {
-      margin-left: -10px;
-      padding-left: 38px;
-    }
+  .form-selection__header span {
+    margin-left: -10px;
+    padding-left: 38px;
   }
 
   .form-selection__aux-wrapper {
@@ -290,5 +330,15 @@
   .form-selection__button-wrapper {
     padding: 0;
     margin-bottom: 21px;
+  }
+
+  .form-selection__icon--mail {
+    right: 22px;
+    top: 20px;
+  }
+
+  .form-selection__icon--phone {
+    right: 16px;
+    top: 16px;
   }
 }

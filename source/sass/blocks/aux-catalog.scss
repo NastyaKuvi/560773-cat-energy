@@ -33,12 +33,12 @@
   padding-bottom: 34px;
 
   @include third-header();
+}
 
-  & span {
-    padding-left: 19px;
-    padding-right: 24px;
-    background-color: $white;
-  }
+.aux-catalog__title span {
+  padding-left: 19px;
+  padding-right: 24px;
+  background-color: $white;
 }
 
 .aux-catalog__list {
@@ -110,11 +110,11 @@
     margin-bottom: 47px;
     font-size: 36px;
     line-height: 36px;
+  }
 
-    & span {
-      padding-left: 39px;
-      padding-right: 37px;
-    }
+  .aux-catalog__title span {
+    padding-left: 39px;
+    padding-right: 37px;
   }
 
   .aux-catalog__wrapper {
@@ -153,11 +153,11 @@
   .aux-catalog__title {
     padding-left: 0;
     margin-bottom: 46px;
+  }
 
-    & span {
-      margin-left: -10px;
-      padding-left: 40px;
-    }
+  .aux-catalog__title span {
+    margin-left: -10px;
+    padding-left: 40px;
   }
 
   .aux-catalog__wrapper {

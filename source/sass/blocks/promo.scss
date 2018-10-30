@@ -92,7 +92,7 @@
 
     background: none;
     color: $dark-gray;
-    text-align: start;
+    text-align: left;
 
     &::before {
       display: none;
@@ -115,6 +115,7 @@
 
   .promo__header {
     margin-bottom: 42px;
+    width: 450px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -150,7 +151,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding-left: 110px;
-    padding-bottom: 268px;
+    padding-bottom: 266px;
 
     &::before {
       display: none;

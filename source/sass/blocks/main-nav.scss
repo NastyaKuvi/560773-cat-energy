@@ -107,18 +107,18 @@
   padding-top: 23px;
   padding-bottom: 22px;
   border-bottom: 1px solid rgb(230, 230, 230);
+}
 
-  & a[href]:hover {
+.main-nav__link {
+  color: $dark-gray;
+
+  &[href]:hover {
     opacity: 0.6;
   }
 
-  & a[href]:active {
+  &[href]:active {
     opacity: 0.3;
   }
-}
-
-.main-nav__item a {
-  color: $dark-gray;
 }
 
 @media (max-width: $mobile-width-only) {

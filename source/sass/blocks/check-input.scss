@@ -41,6 +41,10 @@
   opacity: 1;
 }
 
+.check-input:focus + label::before {
+  opacity: 1;
+}
+
 .check-input:active + label::before {
   opacity: 0.3;
 }

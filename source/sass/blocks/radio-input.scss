@@ -40,6 +40,10 @@
   opacity: 1;
 }
 
+.radio-input:focus + label::before {
+  opacity: 1;
+}
+
 .radio-input:active + label::before {
   opacity: 0.3;
 }

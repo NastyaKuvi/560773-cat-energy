@@ -26,38 +26,9 @@
   }
 }
 
-.text-input:focus + .text-input__icon {
-  opacity: 0.8;
-  fill: $green;
-}
-
-.text-input:invalid + .text-input__icon {
-  opacity: 0.8;
-  fill: rgb(255, 130, 130);
-}
-
-
 .text-input--email,
 .text-input--phone {
   padding-right: 40px;
-}
-
-.text-input__icon--mail {
-  position: absolute;
-  right: 34px;
-  top: 16px;
-
-  width: 17px;
-  height: 13px;
-}
-
-.text-input__icon--phone {
-  position: absolute;
-  right: 31px;
-  top: 13px;
-
-  width: 20px;
-  height: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,30 +47,10 @@
     margin-left: 16px;
     margin-right: -3px;
   }
-
-  .text-input__icon--mail {
-    right: 35px;
-    top: 19px;
-  }
-
-  .text-input__icon--phone {
-    right: 32px;
-    top: 15px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .text-input--email {
     margin-right: 0;
-  }
-
-  .text-input__icon--mail {
-    right: 22px;
-    top: 20px;
-  }
-
-  .text-input__icon--phone {
-    right: 16px;
-    top: 16px;
   }
 }
