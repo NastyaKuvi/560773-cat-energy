@@ -93,11 +93,11 @@
 
   .item__data {
     font-size: 16px;
+  }
 
-    & td {
-      padding: 8px 0;
-      border-bottom: 1px solid $border-color;
-    }
+  .item__data td {
+    padding: 8px 0;
+    border-bottom: 1px solid $border-color;
   }
 
   .item__title {

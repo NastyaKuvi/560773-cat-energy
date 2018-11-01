@@ -45,30 +45,30 @@
   margin-bottom: 13px;
 
   width: 100%;
+}
 
-  & tbody {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.example__facts-table tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  & tr {
-    position: relative;
-    display: block;
-    margin-bottom: 20px;
+.example__facts-table tr {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
 
-    width: 123px;
+  width: 123px;
 
-    border: 1px solid $border-color;
-  }
+  border: 1px solid $border-color;
+}
 
-  & td {
-    display: block;
-    width: auto;
-  }
+.example__facts-table td {
+  display: block;
+  width: auto;
 }
 
 .example__table-value {
@@ -140,15 +140,15 @@
 
   .example__facts-table {
     width: 410px;
+  }
 
-    & tbody {
-      justify-content: flex-start;
-    }
+  .example__facts-table tbody {
+    justify-content: flex-start;
+  }
 
-    & tr {
-      margin-right: 43px;
-      width: 160px;
-    }
+  .example__facts-table tr {
+    margin-right: 43px;
+    width: 160px;
   }
 
   .example__table-value {
