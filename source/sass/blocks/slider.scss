@@ -1,6 +1,9 @@
 .slider {
+  position: relative;
+  padding-top: 306px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .slider__wrapper {
@@ -15,6 +18,7 @@
 .slider__value {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
 
   text-transform: uppercase;
   cursor: pointer;
@@ -30,6 +34,10 @@
 }
 
 .slider__cat {
+  position: absolute;
+  top: 0;
+  left: 21px;
+
   margin-top: 34px;
   margin-left: -20px;
   margin-bottom: 29px;
@@ -68,6 +76,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider {
+    padding-top: 567px;
+  }
+
   .slider__cat {
     margin-left: 25px;
     margin-bottom: 15px;
@@ -129,16 +141,24 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 532px;
   }
 
   .slider__cat {
     margin-left: 0;
     margin-top: -24px;
     margin-bottom: 38px;
+    left: -38px;
   }
 
   .slider__wrapper {
     padding-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  .slider__value {
+    z-index: 0;
   }
 }

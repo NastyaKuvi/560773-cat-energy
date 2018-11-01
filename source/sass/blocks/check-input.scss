@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -7px;
+  top: -5px;
 
   width: 30px;
   height: 30px;
@@ -38,6 +38,10 @@
 }
 
 .check-input:hover + label::before {
+  opacity: 1;
+}
+
+.check-input:focus + label::before {
   opacity: 1;
 }
 

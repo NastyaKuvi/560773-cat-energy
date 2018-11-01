@@ -20,7 +20,7 @@
 
 .how-to__list-item {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .how-to__item-body {
@@ -49,45 +49,41 @@
     background-position: center;
     background-size: 50px auto;
   }
+}
 
-  &.how-to__item-body--leaf::before {
-    background-image: url("../img/advantage-leaf@1x.png");
+.how-to__item-body--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/advantage-leaf@2x.png");
-    }
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
   }
+}
 
-  &.how-to__item-body--powder::before {
-    background-image: url("../img/advantage-powder@1x.png");
+.how-to__item-body--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/advantage-powder@2x.png");
-    }
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
   }
+}
 
-  &.how-to__item-body--dining::before {
-    background-image: url("../img/advantage-dining@1x.png");
+.how-to__item-body--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/advantage-dining@2x.png");
-    }
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
   }
+}
 
-  &.how-to__item-body--clock::before {
-    background-image: url("../img/advantage-clock@1x.png");
+.how-to__item-body--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
 
-    @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-      background-image: url("../img/advantage-clock@2x.png");
-    }
-  }
-
-  &--clock br {
-    display: none;
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
   }
 }
 
@@ -147,10 +143,6 @@
 
     &--leaf::after {
       right: 14px;
-    }
-
-    &--clock br {
-      display: block;
     }
   }
 }

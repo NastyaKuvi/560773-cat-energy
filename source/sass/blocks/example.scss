@@ -28,7 +28,7 @@
 
 .example__body {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   padding: 0;
   padding-right: 1px;
 
@@ -45,30 +45,30 @@
   margin-bottom: 13px;
 
   width: 100%;
+}
 
-  & tbody {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.example__facts-table tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  & tr {
-    position: relative;
-    display: block;
-    margin-bottom: 20px;
+.example__facts-table tr {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
 
-    width: 123px;
+  width: 123px;
 
-    border: 1px solid $border-color;
-  }
+  border: 1px solid $border-color;
+}
 
-  & td {
-    display: block;
-    width: auto;
-  }
+.example__facts-table td {
+  display: block;
+  width: auto;
 }
 
 .example__table-value {
@@ -97,6 +97,7 @@
   align-self: center;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
 
   text-transform: uppercase;
 }
@@ -104,10 +105,11 @@
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 0;
-    padding-bottom: 71px;
+    padding-bottom: 0;
 
     border-top: 1px solid $border-color;
-    background: linear-gradient(to top, $dark-white, $dark-white 462px, $white 462px, $white 100%);
+    background: none;
+    // background: linear-gradient(to top, $dark-white, $dark-white 462px, $white 462px, $white 100%);
   }
 
   .example__wrapper {
@@ -138,15 +140,15 @@
 
   .example__facts-table {
     width: 410px;
+  }
 
-    & tbody {
-      justify-content: flex-start;
-    }
+  .example__facts-table tbody {
+    justify-content: flex-start;
+  }
 
-    & tr {
-      margin-right: 43px;
-      width: 160px;
-    }
+  .example__facts-table tr {
+    margin-right: 43px;
+    width: 160px;
   }
 
   .example__table-value {
@@ -163,10 +165,6 @@
     white-space: nowrap;
 
     background-color: $white;
-
-    & br {
-      display: none;
-    }
   }
 
   .example__cost {
@@ -180,18 +178,36 @@
 
     text-transform: uppercase;
     text-align: right;
+  }
 
-    & span {
-      margin-bottom: 10px;
+  .example__cost span {
+    margin-bottom: 10px;
+  }
+
+  .example__slider {
+    position: relative;
+    padding-bottom: 71px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 200px;
+      left: -2px;
+      right: 9px;
+      bottom: 0;
+      margin: 0 calc(50% - 50vw);
+      border-left: 50vw solid $dark-white;
+      background-color: rgb(234, 234, 234);
+      z-index: -1;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 45px;
-
+    background: $dark-white linear-gradient($white, $white) no-repeat 0 0/100% 166px;
     border: none;
+    overflow: hidden;
   }
 
   .example__container {
@@ -207,12 +223,12 @@
   }
 
   .example__header {
-    margin-top: 34px;
+    margin-top: 32px;
   }
 
   .example__body {
-    margin-top: 80px;
-    margin-bottom: 67px;
+    margin-top: 81px;
+    margin-bottom: 66px;
 
     width: 448px;
   }
@@ -236,9 +252,24 @@
 
   .example__cost {
     flex-direction: row;
+  }
 
-    & span:first-child {
-      margin-right: 63px;
+  .example__cost span:first-child {
+    margin-right: 63px;
+  }
+
+  .example__slider {
+    padding-bottom: 44px;
+
+    &::before {
+      top: 167px;
+      left: 327px;
+      right: 0;
+      margin: 0;
+      border-left: none;
+      border-right: 50vw solid rgb(234, 234, 234);
+      background-color: $dark-white;
+      z-index: 0;
     }
   }
 }

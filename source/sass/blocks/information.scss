@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .information__wrapper {
-    padding: 45px 71px;
+    padding: 45px 71px 43px;
     width: 768px;
   }
 
@@ -57,10 +57,10 @@
     font-size: 16px;
 
     text-align: right;
+  }
 
-    & span {
-      margin-top: 19px;
-    }
+  .information__adress span {
+    margin-top: 19px;
   }
 }
 
@@ -70,7 +70,7 @@
   }
 
   .information__wrapper {
-    padding: 45px 74px;
+    padding: 47px 76px 41px;
 
     justify-content: flex-start;
     width: 100%;

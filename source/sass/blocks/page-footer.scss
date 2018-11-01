@@ -18,14 +18,14 @@
 .page-footer__logo {
   margin-top: 35px;
   margin-bottom: 29px;
+}
 
-  &[href]:hover {
-    opacity: 0.8;
-  }
+.page-footer__logo-link:hover {
+  opacity: 0.8;
+}
 
-  &[href]:active {
-    opacity: 0.6;
-  }
+.page-footer__logo-link:active {
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {

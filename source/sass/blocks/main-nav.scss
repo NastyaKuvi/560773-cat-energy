@@ -16,14 +16,14 @@
 
 .main-nav__logo {
   margin-left: 20px;
+}
 
-  &[href]:hover {
-    opacity: 0.8;
-  }
+.main-nav__logo-link:hover {
+  opacity: 0.8;
+}
 
-  &[href]:active {
-    opacity: 0.6;
-  }
+.main-nav__logo-link:active {
+  opacity: 0.6;
 }
 
 .main-nav__toggle {
@@ -107,18 +107,18 @@
   padding-top: 23px;
   padding-bottom: 22px;
   border-bottom: 1px solid rgb(230, 230, 230);
-
-  & a[href]:hover {
-    opacity: 0.6;
-  }
-
-  & a[href]:active {
-    opacity: 0.3;
-  }
 }
 
-.main-nav__item a {
+.main-nav__link {
   color: $dark-gray;
+}
+
+.main-nav__item:not(.main-nav__item--active):hover {
+  opacity: 0.6;
+}
+
+.main-nav__item:not(.main-nav__item--active):active {
+  opacity: 0.3;
 }
 
 @media (max-width: $mobile-width-only) {

@@ -9,7 +9,7 @@
 .programs__list-item {
   padding: 24px 20px;
   padding-bottom: 21px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   background-color: $dark-white;
 
   display: flex;
@@ -25,6 +25,7 @@
 
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
 
   text-transform: uppercase;
 
@@ -230,7 +231,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   .programs__list {
