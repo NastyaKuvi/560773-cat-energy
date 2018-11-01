@@ -26,7 +26,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 0 30px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     border: none;
   }
@@ -53,17 +53,17 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 
   .catalog__header {
     padding-top: 45px;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
   }
 
   .catalog__item {
     margin-right: 80px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     width: 245px;
 
     &:nth-child(2n) {

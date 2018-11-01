@@ -3,22 +3,26 @@
 
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .form-selection__set {
-  position: relative;
   padding: 0;
+  margin-bottom: 15px;
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
   border: none;
-  margin-bottom: 14px;
 }
 
 .form-selection__header {
   position: relative;
   margin-bottom: 33px;
+
+  display: block;
 
   @include third-header();
 
@@ -57,7 +61,7 @@
 
 .form-selection__field {
   position: relative;
-  padding: 0 18px;
+  padding: 0 19px;
   margin-bottom: 14px;
 
   display: flex;
@@ -77,7 +81,7 @@
 }
 
 .form-selection__profile-wrapper {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .form-selection__needs-wrapper {
@@ -89,7 +93,7 @@
 }
 
 .form-selection__aux-wrapper {
-  padding-top: 9px;
+  padding-top: 5px;
 
   display: flex;
   flex-direction: column;
@@ -150,16 +154,17 @@
   .form-selection {
     padding: 30px 0;
     padding-bottom: 0;
+    margin-bottom: 33px;
   }
 
   .form-selection__set {
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
     border-bottom: none;
   }
 
   .form-selection__intro {
-    margin-bottom: 67px;
+    margin-bottom: 45px;
     padding: 0 70px;
 
     font-size: 20px;
@@ -169,6 +174,7 @@
   .form-selection__wrapper {
     margin-bottom: 29px;
     padding: 0 51px;
+    padding-top: 20px;
   }
 
   .form-selection__field {
@@ -192,7 +198,7 @@
 
   .form-selection__aux-wrapper {
     padding: 0 50px;
-    margin-top: -11px;
+    margin-top: 10px;
 
     display: flex;
     flex-direction: row;
@@ -209,7 +215,7 @@
   }
 
   .form-selection__header {
-    margin-bottom: 77px;
+    margin-bottom: 57px;
     padding: 0 30px;
 
     &::before {
@@ -263,6 +269,7 @@
 @media (min-width: $desktop-width) {
   .form-selection {
     padding: 30px 0;
+    margin-bottom: 32px;
   }
 
   .form-selection__intro {
@@ -276,6 +283,7 @@
   .form-selection__wrapper {
     margin-bottom: 25px;
     padding: 0 30px;
+    padding-top: 20px;
     flex-direction: row;
     justify-content: space-between;
   }

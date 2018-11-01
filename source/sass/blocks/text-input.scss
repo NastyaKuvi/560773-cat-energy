@@ -1,7 +1,7 @@
 .text-input {
   padding: 11px 14px;
   padding-bottom: 14px;
-  margin-left: 12px;
+  margin-left: 15px;
 
   flex-grow: 1;
 
@@ -29,6 +29,7 @@
 .text-input--email,
 .text-input--phone {
   padding-right: 40px;
+  margin-left: 12px;
 }
 
 @media (min-width: $tablet-width) {
